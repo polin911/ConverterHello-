@@ -83,7 +83,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-Xe-Fm4" userLabel="ConvertorView">
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-Xe-Fm4" userLabel="ConvertorView" customClass="ConverterView" customModule="HelloSwift" customModuleProvider="target">
                                 <rect key="frame" x="16" y="273" width="343" height="120"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IXi-vc-QNW">
@@ -109,6 +109,9 @@
                                                         <state key="normal" title="--&gt;">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="forwardPressed" destination="TMu-Xe-Fm4" eventType="touchUpInside" id="iLS-yJ-0CV"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQs-FA-Dnq">
                                                         <rect key="frame" x="0.0" y="46" width="50" height="36"/>
@@ -117,6 +120,9 @@
                                                         <state key="normal" title="&lt;--">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="backwardPressed" destination="TMu-Xe-Fm4" eventType="touchUpInside" id="WNx-uw-P6C"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -142,6 +148,10 @@
                                     <constraint firstAttribute="trailing" secondItem="IXi-vc-QNW" secondAttribute="trailing" id="hVg-ZG-NRp"/>
                                     <constraint firstItem="IXi-vc-QNW" firstAttribute="leading" secondItem="TMu-Xe-Fm4" secondAttribute="leading" id="kmA-8f-BSr"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="fromTextField" destination="4GZ-Ee-4gZ" id="wxZ-Lx-mw0"/>
+                                    <outlet property="toTextField" destination="7VQ-eC-gqQ" id="HGV-xC-4v2"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.80402561363888891" green="0.72675238715277779" blue="1" alpha="1" colorSpace="calibratedRGB"/>
