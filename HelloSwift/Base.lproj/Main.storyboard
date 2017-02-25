@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,13 +43,15 @@
                                     <constraint firstAttribute="height" constant="30" id="PSn-Rl-tGF"/>
                                     <constraint firstAttribute="width" constant="189" id="w2x-TN-EDN"/>
                                 </constraints>
-                                <state key="normal" title="привет"/>
+                                <state key="normal" title="привет">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="helloButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhN-bx-xCa"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.80402561360000002" green="0.72675238720000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pCx-y6-1rk" firstAttribute="trailing" secondItem="FLD-jJ-fwi" secondAttribute="trailing" id="M3j-ny-NIP"/>
                             <constraint firstItem="FLD-jJ-fwi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nmy-FC-SwE"/>
@@ -79,13 +82,81 @@
                     <view key="view" contentMode="scaleToFill" id="84s-Kt-016">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TMu-Xe-Fm4" userLabel="ConvertorView">
+                                <rect key="frame" x="16" y="273" width="343" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IXi-vc-QNW">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rub" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7VQ-eC-gqQ">
+                                                <rect key="frame" x="10" y="45" width="126.5" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3ry-UV-3O5">
+                                                <rect key="frame" x="146.5" y="19" width="50" height="82"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNL-2s-eqF">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="36"/>
+                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.68292785830000002" blue="0.81876572989999996" alpha="0.82535021549999998" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="50" id="x94-r0-77B"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="--&gt;">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uQs-FA-Dnq">
+                                                        <rect key="frame" x="0.0" y="46" width="50" height="36"/>
+                                                        <color key="backgroundColor" red="0.40000000600000002" green="0.68292785830000002" blue="0.81876572989999996" alpha="0.82535021549999998" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="&lt;--">
+                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Euro" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4GZ-Ee-4gZ">
+                                                <rect key="frame" x="206.5" y="45" width="126.5" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4GZ-Ee-4gZ" firstAttribute="width" secondItem="7VQ-eC-gqQ" secondAttribute="width" id="Uoc-FZ-3VS"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.64542988469999996" green="0.46266353570000002" blue="0.69649439099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="WjT-5U-Fuo"/>
+                                    <constraint firstItem="IXi-vc-QNW" firstAttribute="top" secondItem="TMu-Xe-Fm4" secondAttribute="top" id="c1k-aq-AO5"/>
+                                    <constraint firstAttribute="bottom" secondItem="IXi-vc-QNW" secondAttribute="bottom" id="hKc-He-4WA"/>
+                                    <constraint firstAttribute="trailing" secondItem="IXi-vc-QNW" secondAttribute="trailing" id="hVg-ZG-NRp"/>
+                                    <constraint firstItem="IXi-vc-QNW" firstAttribute="leading" secondItem="TMu-Xe-Fm4" secondAttribute="leading" id="kmA-8f-BSr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80402561363888891" green="0.72675238715277779" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="TMu-Xe-Fm4" firstAttribute="leading" secondItem="84s-Kt-016" secondAttribute="leadingMargin" id="9mM-2J-wlO"/>
+                            <constraint firstItem="TMu-Xe-Fm4" firstAttribute="centerY" secondItem="84s-Kt-016" secondAttribute="centerY" id="aAR-1b-D6m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TMu-Xe-Fm4" secondAttribute="trailing" id="mgB-Ay-2A1"/>
+                            <constraint firstItem="TMu-Xe-Fm4" firstAttribute="centerX" secondItem="84s-Kt-016" secondAttribute="centerX" id="oZY-O7-2MQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Converter" id="e8V-4r-gr4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZC0-kv-uFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="190" y="476"/>
+            <point key="canvasLocation" x="189.59999999999999" y="475.41229385307349"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xfE-xo-WC2">
