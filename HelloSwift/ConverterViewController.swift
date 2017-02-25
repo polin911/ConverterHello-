@@ -43,7 +43,7 @@ extension ConverterViewController: ConverterViewDelegate {
             return
         }
         let euroes = converter.convertForward(amount: rubles)
-        view.toValue = "\(euroes) €"
+        view.toValue = "€ \(euroes) "
     }
     
     

@@ -37,8 +37,16 @@ class ConverterView: UIView {
         }
     }
     
-    @IBOutlet private weak var toTextField: UITextField?
-    @IBOutlet private weak var fromTextField: UITextField?
+    @IBOutlet private weak var toTextField: UITextField? {
+        didSet {
+            toTextField?.delegate = self
+        }
+    }
+    @IBOutlet private weak var fromTextField: UITextField? {
+        didSet {
+            fromTextField?.delegate = self
+        }
+    }
     
     
     @IBAction func forwardPressed() {
@@ -57,18 +65,24 @@ class ConverterView: UIView {
     private func setup () {
         self.layer.cornerRadius = 5
         self.clipsToBounds = true
+        
+        
     }
-    
 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
+
+extension ConverterView: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
+        textField.text = textField.text?.filterForNumberConvertion
+    }
+}
+
+
+
+
+
+
+
+
