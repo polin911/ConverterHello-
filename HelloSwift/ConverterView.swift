@@ -30,10 +30,10 @@ class ConverterView: UIView {
     
     var fromValue: String? {
         set {
-            toTextField?.text = newValue
+            fromTextField?.text = newValue
         }
         get {
-            return toTextField?.text
+            return fromTextField?.text
         }
     }
     

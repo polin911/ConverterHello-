@@ -19,7 +19,52 @@ class ConverterViewController: UIViewController {
 
     @IBOutlet weak var converterView: ConverterView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+        
+        
+        
+    }
     
-    
+    func setup() {
+        converterView.delegate = self
+    }
 
 }
+
+extension ConverterViewController: ConverterViewDelegate {
+    
+    func convrterView(view: ConverterView, converForward value: String?) {
+        guard let rubText = value,
+              let rubles = Double(rubText)
+        else {
+            return
+        }
+        let euroes = converter.convertForward(amount: rubles)
+        view.toValue = "\(euroes)"
+    }
+    
+    
+    
+    func converterView(view: ConverterView, converBackward value: String?) {
+//        guard <#condition#> else {
+//            <#statements#>
+//        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

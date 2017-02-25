@@ -149,8 +149,8 @@
                                     <constraint firstItem="IXi-vc-QNW" firstAttribute="leading" secondItem="TMu-Xe-Fm4" secondAttribute="leading" id="kmA-8f-BSr"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="fromTextField" destination="4GZ-Ee-4gZ" id="wxZ-Lx-mw0"/>
-                                    <outlet property="toTextField" destination="7VQ-eC-gqQ" id="HGV-xC-4v2"/>
+                                    <outlet property="fromTextField" destination="7VQ-eC-gqQ" id="FHc-w5-acG"/>
+                                    <outlet property="toTextField" destination="4GZ-Ee-4gZ" id="5YD-6S-neZ"/>
                                 </connections>
                             </view>
                         </subviews>
