@@ -48,9 +48,13 @@ extension ConverterViewController: ConverterViewDelegate {
     
     
     func converterView(view: ConverterView, converBackward value: String?) {
-//        guard <#condition#> else {
-//            <#statements#>
-//        }
+        guard let euroText = value,
+              let euro = Double(euroText)
+        else {
+            return
+        }
+        let rubles = converter.converyBackward(amount: euro)
+        view.fromValue = "\(rubles)"
     }
 }
 
