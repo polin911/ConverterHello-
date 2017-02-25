@@ -8,8 +8,18 @@
 
 import UIKit
 
+
+
 class ConverterViewController: UIViewController {
 
+    var converter = Converter(forwardRatio: 1 / 61.9,
+                              bacwardRatio: 58.3,
+                              precision: 2)
+    
 
+    @IBOutlet weak var converterView: ConverterView!
+    
+    
+    
 
 }

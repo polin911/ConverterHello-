@@ -29,6 +29,8 @@ struct Converter {
         let multyply = pow(10, Double(precision))
         let newValue = round(amount * multyply)
         return newValue / multyply
+        
+        
     }
     
 }
