@@ -12,6 +12,9 @@
 		364591F21E61660400ABCC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364591F11E61660400ABCC6F /* Assets.xcassets */; };
 		364591F51E61660400ABCC6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364591F31E61660400ABCC6F /* LaunchScreen.storyboard */; };
 		364591FD1E61700200ABCC6F /* HelloSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364591FC1E61700200ABCC6F /* HelloSwiftViewController.swift */; };
+		364591FF1E618D8000ABCC6F /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364591FE1E618D8000ABCC6F /* ConverterViewController.swift */; };
+		364592011E618DBA00ABCC6F /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364592001E618DBA00ABCC6F /* Converter.swift */; };
+		364592031E618DF700ABCC6F /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364592021E618DF700ABCC6F /* ConverterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		364591F41E61660400ABCC6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		364591F61E61660400ABCC6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		364591FC1E61700200ABCC6F /* HelloSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloSwiftViewController.swift; sourceTree = SOURCE_ROOT; };
+		364591FE1E618D8000ABCC6F /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		364592001E618DBA00ABCC6F /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		364592021E618DF700ABCC6F /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,8 @@
 		364591E91E61660400ABCC6F /* HelloSwift */ = {
 			isa = PBXGroup;
 			children = (
-				364591FC1E61700200ABCC6F /* HelloSwiftViewController.swift */,
+				364592051E618E4900ABCC6F /* HelloSwift */,
+				364592041E618E2C00ABCC6F /* Converter */,
 				364591EA1E61660400ABCC6F /* AppDelegate.swift */,
 				364591EE1E61660400ABCC6F /* Main.storyboard */,
 				364591F11E61660400ABCC6F /* Assets.xcassets */,
@@ -62,6 +69,24 @@
 				364591F61E61660400ABCC6F /* Info.plist */,
 			);
 			path = HelloSwift;
+			sourceTree = "<group>";
+		};
+		364592041E618E2C00ABCC6F /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				364591FE1E618D8000ABCC6F /* ConverterViewController.swift */,
+				364592001E618DBA00ABCC6F /* Converter.swift */,
+				364592021E618DF700ABCC6F /* ConverterView.swift */,
+			);
+			name = Converter;
+			sourceTree = "<group>";
+		};
+		364592051E618E4900ABCC6F /* HelloSwift */ = {
+			isa = PBXGroup;
+			children = (
+				364591FC1E61700200ABCC6F /* HelloSwiftViewController.swift */,
+			);
+			name = HelloSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +163,9 @@
 			files = (
 				364591EB1E61660400ABCC6F /* AppDelegate.swift in Sources */,
 				364591FD1E61700200ABCC6F /* HelloSwiftViewController.swift in Sources */,
+				364592011E618DBA00ABCC6F /* Converter.swift in Sources */,
+				364592031E618DF700ABCC6F /* ConverterView.swift in Sources */,
+				364591FF1E618D8000ABCC6F /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
