@@ -15,6 +15,7 @@
 		364591FF1E618D8000ABCC6F /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364591FE1E618D8000ABCC6F /* ConverterViewController.swift */; };
 		364592011E618DBA00ABCC6F /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364592001E618DBA00ABCC6F /* Converter.swift */; };
 		364592031E618DF700ABCC6F /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364592021E618DF700ABCC6F /* ConverterView.swift */; };
+		369AF9871E61C37700596582 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369AF9861E61C37700596582 /* String+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		364591FE1E618D8000ABCC6F /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		364592001E618DBA00ABCC6F /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 		364592021E618DF700ABCC6F /* ConverterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		369AF9861E61C37700596582 /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				364591F11E61660400ABCC6F /* Assets.xcassets */,
 				364591F31E61660400ABCC6F /* LaunchScreen.storyboard */,
 				364591F61E61660400ABCC6F /* Info.plist */,
+				369AF9861E61C37700596582 /* String+extension.swift */,
 			);
 			path = HelloSwift;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				364591EB1E61660400ABCC6F /* AppDelegate.swift in Sources */,
 				364591FD1E61700200ABCC6F /* HelloSwiftViewController.swift in Sources */,
+				369AF9871E61C37700596582 /* String+extension.swift in Sources */,
 				364592011E618DBA00ABCC6F /* Converter.swift in Sources */,
 				364592031E618DF700ABCC6F /* ConverterView.swift in Sources */,
 				364591FF1E618D8000ABCC6F /* ConverterViewController.swift in Sources */,
@@ -327,6 +331,7 @@
 				364591FB1E61660400ABCC6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
